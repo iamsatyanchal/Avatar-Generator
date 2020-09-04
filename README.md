@@ -1,5 +1,5 @@
 # Avatar Generator
-
+# See it live :- https://generateavatar.netlify.app
 This is a simple avatar generator which generates avatar by name. Made by Satyanchal: [https://www.instagram.com/iamsatyanchal/](https://www.instagram.com/iamsatyanchal/).
 
 Avatar Generator 😉
