@@ -1,0 +1,92 @@
+
+
+
+<!--Hey boy I know Why are you here. Below is the link of the source code 👇-->
+<!--  https://github.com/Bluehatcoders/Avatar-Generator  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+        <title>Avatar Generator - Generate by Name</title>
+        <meta property="og:title" content="Avatar Generator - Generate by Name">
+
+
+        <meta property="og:description" content="Genearte your cool avatars with your name">
+        <meta name="description" content="Genearte your cool avatars with your name">
+        <link rel="shortcut icon" href="avatargeneratoricon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="avatargeneratoricon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="avatargeneratoricon.png">
+      
+        <!-- Template core CSS -->
+        
+        <link href="template.min.css" rel="stylesheet">
+       
+        
+    </head>
+    <!-- Head -->
+
+    <body>
+
+        <div class="layout">
+
+            <div class="container d-flex flex-column">
+                <div class="row align-items-center justify-content-center no-gutters min-vh-100">
+                    <div class="outputs" style="padding: 1.5rem 2.3rem;">
+                        <img id="img" style="border-radius: 50%; width: 100%; vertical-align: super;"/>
+            
+                      </div>
+                    <div class="col-12 col-md-5 col-lg-4 py-md-11">
+
+    
+                        <!-- Form -->
+                        <form>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Your First Name</label>
+                                <input type="text" class="form-control form-control-lg" id="firstname" placeholder="Enter your First Name">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="password" class="sr-only">lastname</label>
+                                <input type="text" class="form-control form-control-lg" id="lastname" placeholder="Enter your Last Name">
+                            </div>
+
+                          
+
+                            <!-- Submit -->
+                            <button class="btn btn-lg btn-primary" id="generateAvatar" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
+                              </svg> Create</button>
+                            <button class="btn btn-lg" id="generateAvatar" type="submit" style="display: inline; color: #fff;
+                            background-color: #FFC107; border-color: #FFC107;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shuffle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                              </svg> Random</button>
+                            <a id="img1" style="display: inline; padding: .875rem 1.09rem; border-radius: 50%; color: white; background-color: green; border-color: #4CAF50;" download ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                              </svg></a>
+                      
+                        </form>
+                    </div>
+                   
+                </div> <!-- / .row -->
+                
+            </div>
+        
+        </div><!-- .layout -->
+    
+
+        <!-- Scripts -->
+        <script src="bootstrap.bundle.min.js.download"></script>
+        <script  src="script.js"></script>
+        <!-- Scripts -->
+
+    
+</body></html>
