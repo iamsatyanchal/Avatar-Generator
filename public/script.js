@@ -1,9 +1,4 @@
-
-
-/* Hey boy I know Why are you here. Below is the link of the source code 👇 */
- /*   https://github.com/Bluehatcoders/Avatar-Generator   */
-
-
+// Let's Start 
  
 // selecting components
 let firstname, lastname, generate, avatar, ctx, color;
